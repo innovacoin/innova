@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/innova_bg.qm</file>
+        <file alias="de">locale/innova_de.qm</file>
+        <file alias="en">locale/innova_en.qm</file>
+        <file alias="es">locale/innova_es.qm</file>
+        <file alias="fi">locale/innova_fi.qm</file>
+        <file alias="fr">locale/innova_fr.qm</file>
+        <file alias="it">locale/innova_it.qm</file>
+        <file alias="ja">locale/innova_ja.qm</file>
+        <file alias="pl">locale/innova_pl.qm</file>
+        <file alias="pt">locale/innova_pt.qm</file>
+        <file alias="ru">locale/innova_ru.qm</file>
+        <file alias="sk">locale/innova_sk.qm</file>
+        <file alias="sv">locale/innova_sv.qm</file>
+        <file alias="vi">locale/innova_vi.qm</file>
+        <file alias="zh_CN">locale/innova_zh_CN.qm</file>
+        <file alias="zh_TW">locale/innova_zh_TW.qm</file>
+    </qresource>
+</RCC>

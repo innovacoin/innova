@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Innova
+Comment=Innova P2P Cryptocurrency
+Exec=innova-qt %u
+Terminal=false
+Type=Application
+Icon=innova128
+MimeType=x-scheme-handler/innova;
+Categories=Office;Finance;
+Name[en_US]=innova-qt.desktop

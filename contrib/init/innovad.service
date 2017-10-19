@@ -1,0 +1,22 @@
+[Unit]
+Description=Innova's distributed currency daemon
+After=network.target
+
+[Service]
+User=innovacore
+Group=innovacore
+
+Type=forking
+PIDFile=/var/lib/innovad/innovad.pid
+ExecStart=/usr/bin/innovad -daemon -pid=/var/lib/innovad/innovad.pid \
+-conf=/etc/innovacore/innova.conf -datadir=/var/lib/innovad -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

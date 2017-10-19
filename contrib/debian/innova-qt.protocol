@@ -1,0 +1,11 @@
+[Protocol]
+exec=innova-qt '%u'
+protocol=innova
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

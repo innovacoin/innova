@@ -1,0 +1,33 @@
+# /etc/conf.d/innovad: config file for /etc/init.d/innovad
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/innovacore/innova.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/innovad"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/innovad.pid"
+
+# Where to write innovad data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/innovad"
+
+# User and group to own innovad process
+#BITCOIND_USER="innovacore"
+#BITCOIND_GROUP="innovacore"
+
+# Path to innovad executable
+#BITCOIND_BIN="/usr/bin/innovad"
+
+# Nice value to run innovad under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for bitcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=60
