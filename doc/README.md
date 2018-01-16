@@ -1,7 +1,7 @@
 Innova Core 0.12.1
 =====================
 
-This is the official reference wallet for Innova digital currency and comprises the backbone of the Innova peer-to-peer network. You can [download Innova Core](https://www.innovacoin.info/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for Innova digital currency and comprises the backbone of the Innova peer-to-peer network. You can [download Innova Core](https://innovacoin.info/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------

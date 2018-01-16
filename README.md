@@ -3,7 +3,7 @@ Innova Core staging tree 0.12.1
 
 `master:` [![Build Status](https://travis-ci.org/innovacoin/innova.svg?branch=master)](https://travis-ci.org/innovacoin/innova) `v0.12.0.x:` [![Build Status](https://travis-ci.org/innovacoin/innova.svg?branch=v0.12.0.x)](https://travis-ci.org/innovacoin/innova/branches) `v0.12.1.x:` [![Build Status](https://travis-ci.org/innovacoin/innova.svg?branch=v0.12.1.x)](https://travis-ci.org/innovacoin/innova/branches)
 
-https://www.innovacoin.info
+https://innovacoin.info
 
 
 What is Innova?
@@ -16,7 +16,7 @@ are carried out collectively by the network. Innova Core is the name of the open
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Innova Core software, see https://www.innovacoin.info/get-innova/.
+the Innova Core software, see https://innovacoin.info.
 
 
 License
@@ -74,4 +74,4 @@ Translations are periodically pulled from Transifex and merged into the git repo
 **Important**: We do not accept translation changes as GitHub pull requests because the next
 pull from Transifex would automatically overwrite them again.
 
-Translators should also follow the [forum](https://www.innovacoin.info/forum/topic/innova-worldwide-collaboration.88/).
+Translators should also follow the [forum](https://innovacoin.info/forum/topic/innova-worldwide-collaboration.88/).

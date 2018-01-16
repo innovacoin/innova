@@ -1,6 +1,6 @@
 Innova Core version 0.12.1 is now available from:
 
-  <https://www.innovacoin.info/downloads/>
+  <https://innovacoin.info/downloads/>
 
 
 
@@ -44,10 +44,10 @@ git merge commit are mentioned.
 Asm script outputs replacements for OP_NOP2 and OP_NOP3
 -------------------------------------------------------
 
-OP_NOP2 has been renamed to OP_CHECKLOCKTIMEVERIFY by [BIP 
+OP_NOP2 has been renamed to OP_CHECKLOCKTIMEVERIFY by [BIP
 65](https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki)
 
-OP_NOP3 has been renamed to OP_CHECKSEQUENCEVERIFY by [BIP 
+OP_NOP3 has been renamed to OP_CHECKSEQUENCEVERIFY by [BIP
 112](https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki)
 
 The following outputs are affected by this change:
@@ -112,4 +112,3 @@ These release are considered obsolete. Old changelogs can be found here:
 - [v0.11.0](release-notes/innova/release-notes-0.11.0.md) released Jan/15/2015
 - [v0.10.x](release-notes/innova/release-notes-0.10.0.md) released Sep/25/2014
 - [v0.9.x](release-notes/innova/release-notes-0.9.0.md) released Mar/13/2014
-

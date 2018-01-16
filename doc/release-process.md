@@ -188,7 +188,7 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
 - Announce the release:
 
-  - Release on Innova forum: https://www.innovacoin.info/forum/topic/official-announcements.54/
+  - Release on Innova forum: https://innovacoin.info/forum/topic/official-announcements.54/
 
   - Innova-development mailing list
 
