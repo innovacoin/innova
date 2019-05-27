@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017 The Innova Core developers
+// Copyright (c) 2014-2019 The Innova Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -536,9 +536,9 @@ bool CMasternodeBroadcast::SimpleCheck(int& nDos)
     }
 
     int mainnetDefaultPort = Params(CBaseChainParams::MAIN).GetDefaultPort();
-    if(Params().NetworkIDString() == CBaseChainParams::MAIN) {
-        if(addr.GetPort() != mainnetDefaultPort) return false;
-    } else if(addr.GetPort() == mainnetDefaultPort) return false;
+    if(Params().NetworkIDString() != CBaseChainParams::MAIN) {
+        if(addr.GetPort() == mainnetDefaultPort) return false;
+    }
 
     return true;
 }

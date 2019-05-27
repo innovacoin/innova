@@ -33,6 +33,7 @@ EXTRA_LIBRARIES += \
   crypto/libbitcoin_crypto.a \
   libbitcoin_util.a \
   libbitcoin_common.a \
+	univalue/libbitcoin_univalue.a \
   libbitcoin_server.a \
   libbitcoin_cli.a
 if ENABLE_WALLET
@@ -124,6 +125,7 @@ BITCOIN_CORE_H = \
   masternodeconfig.h \
   memusage.h \
   merkleblock.h \
+	DevPayment.h \
   miner.h \
   net.h \
   netbase.h \
@@ -211,6 +213,7 @@ libbitcoin_server_a_SOURCES = \
   governance-votedb.cpp \
   main.cpp \
   merkleblock.cpp \
+	DevPayment.cpp \
   miner.cpp \
   net.cpp \
   netfulfilledman.cpp \

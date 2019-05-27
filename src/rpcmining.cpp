@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
-// Copyright (c) 2014-2017 The Innova Core developers
+// Copyright (c) 2014-2019 The Innova Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -625,6 +625,20 @@ UniValue getblocktemplate(const UniValue& params, bool fHelp)
     result.push_back(Pair("masternode", masternodeObj));
     result.push_back(Pair("masternode_payments_started", pindexPrev->nHeight + 1 > Params().GetConsensus().nMasternodePaymentsStartBlock));
     result.push_back(Pair("masternode_payments_enforced", sporkManager.IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT)));
+
+    UniValue devObj(UniValue::VOBJ);
+       if(pblock->txoutDev!= CTxOut()) {
+         CTxDestination address1;
+         ExtractDestination(pblock->txoutDev.scriptPubKey, address1);
+         CBitcoinAddress address2(address1);
+         devObj.push_back(Pair("payee", address2.ToString().c_str()));
+       devObj.push_back(Pair("script", HexStr(pblock->txoutDev.scriptPubKey.begin(), pblock->txoutDev.scriptPubKey.end())));
+       devObj.push_back(Pair("amount", pblock->txoutDev.nValue));
+       LogPrintf("getblocktemplate: push dev object with address %s\n", address2.ToString().c_str());
+   }
+   result.push_back(Pair("dev", devObj));
+   result.push_back(Pair("dev_payments_started", pindexPrev->nHeight + 1 > Params().GetConsensus().nDevPaymentsStartBlock));
+   result.push_back(Pair("dev_payments_enforced", sporkManager.IsSporkActive(SPORK_15_DEV_PAYMENT_ENFORCEMENT)));
 
     UniValue superblockObjArray(UniValue::VARR);
     if(pblock->voutSuperblock.size()) {

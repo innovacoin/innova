@@ -43,4 +43,3 @@
 +    QMAKE_CFLAGS += -I$$XCB_DIR/include -I$$XCB_DIR/sysinclude $$QMAKE_CFLAGS_XCB
 +    QMAKE_CXXFLAGS += -I$$XCB_DIR/include -I$$XCB_DIR/sysinclude $$QMAKE_CFLAGS_XCB
 +}
-

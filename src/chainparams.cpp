@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin Core developers
-// Copyright (c) 2014-2017 The Innova Core developers
+// Copyright (c) 2014-2019 The Innova Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -78,6 +78,8 @@ public:
         consensus.nMasternodePaymentsStartBlock = 5040; // one week
         consensus.nMasternodePaymentsIncreaseBlock = 158000; // not used
         consensus.nMasternodePaymentsIncreasePeriod = 576*30; // not used
+        consensus.nDevPaymentsStartBlock = 390000; // test
+        consensus.nPrivatesendForkBlock = 390000; //test
         consensus.nInstantSendKeepLock = 24;
         consensus.nBudgetPaymentsStartBlock = 2100000000; // year 10000+
         consensus.nBudgetPaymentsCycleBlocks = 16616;
@@ -129,10 +131,12 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x641917107e75e4fe61d86f80bb88f1b275195da653c50b4c789fd847ab69bea4"));
 
 
-        vSeeds.push_back(CDNSSeedData("innovacoin.info", "dnss1.innovacoin.info"));
-        vSeeds.push_back(CDNSSeedData("innovacoin.info", "dnss2.innovacoin.info"));
-        vSeeds.push_back(CDNSSeedData("innovacoin.info", "dnss3.innovacoin.info"));
-        vSeeds.push_back(CDNSSeedData("innovacoin.info", "dnss4.innovacoin.info"));
+        vSeeds.push_back(CDNSSeedData("195.154.146.17:14520", "195.154.146.17:14520"));
+        vSeeds.push_back(CDNSSeedData("62.210.251.30:14520", "62.210.251.30:14520"));
+        vSeeds.push_back(CDNSSeedData("62.210.90.59:14520", "62.210.90.59:14520"));
+        vSeeds.push_back(CDNSSeedData("62.210.91.126:14520", "62.210.91.126:14520"));
+        vSeeds.push_back(CDNSSeedData("207.148.30.107:14520", "207.148.30.107:14520"));
+    //  vSeeds.push_back(CDNSSeedData("", ""));
 
         // Innova addresses start with 'i'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,102);
@@ -149,7 +153,7 @@ public:
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = true;
+        fMiningRequiresPeers = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
@@ -166,6 +170,9 @@ public:
             (   2100, uint256S("0x0000000016169afb092aa536662c6c2f808b7b1eefe13842d2039cddd5633969"))
             (  19000, uint256S("0x0000000000534e943f2e311b0a3d3793ba15e865dd4b84d5d7325622796d6aac"))
             ( 100000, uint256S("0x0000000000dae505446b8f45970920d0958be34102e36f0ca67abfe209127104"))
+            ( 185000, uint256S("0x00000000024ac9faefcb0a32384f4c827a47f0abea922c50d71ba843dcf6e1b5"))
+            ( 185001, uint256S("0x000000000168b4fee284bbaa0995eb96ed664528bf91d35325d034dfa3fc2287"))
+            ( 190000, uint256S("0x000000001aed0f11fac4e300b58e284dab57ea8c03ab148df597adcccd4f0b54"))
             ( 208990, uint256S("0x000000000ac17b76f8bb080c87e02393d8995b64634e3ec2c79abd21a5900412")),
             1535178034, // * UNIX timestamp of last checkpoint block
             0,    // * total number of transactions between genesis and last checkpoint

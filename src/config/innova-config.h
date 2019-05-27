@@ -9,7 +9,7 @@
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
 
 /* Version Build */
-#define CLIENT_VERSION_BUILD 11
+#define CLIENT_VERSION_BUILD 0
 
 /* Version is release */
 #define CLIENT_VERSION_IS_RELEASE true
@@ -21,19 +21,19 @@
 #define CLIENT_VERSION_MINOR 12
 
 /* Build revision */
-#define CLIENT_VERSION_REVISION 1
+#define CLIENT_VERSION_REVISION 2
 
 /* Version is release */
-#define COPYRIGHT_YEAR 2017
+#define COPYRIGHT_YEAR 2019
 
 /* Define to 1 to enable wallet functions */
 #define ENABLE_WALLET 1
 
 /* Define to 1 to enable ZMQ functions */
-#define ENABLE_ZMQ 1
+#define ENABLE_ZMQ 0
 
 /* parameter and return value type for __fdelt_chk */
-/* #undef FDELT_TYPE */
+ #define FDELT_TYPE long int
 
 /* define if the Boost library is available */
 #define HAVE_BOOST /**/
@@ -137,10 +137,10 @@
 #define HAVE_ENDIAN_H 1
 
 /* Define to 1 if the system has the `dllexport' function attribute */
-/* #undef HAVE_FUNC_ATTRIBUTE_DLLEXPORT */
+#define HAVE_FUNC_ATTRIBUTE_DLLEXPORT
 
 /* Define to 1 if the system has the `dllimport' function attribute */
-/* #undef HAVE_FUNC_ATTRIBUTE_DLLIMPORT */
+#define HAVE_FUNC_ATTRIBUTE_DLLIMPORT
 
 /* Define to 1 if the system has the `visibility' function attribute */
 #define HAVE_FUNC_ATTRIBUTE_VISIBILITY 1
@@ -155,76 +155,76 @@
 #define HAVE_INTTYPES_H 1
 
 /* Define to 1 if you have the `advapi32' library (-ladvapi32). */
-/* #undef HAVE_LIBADVAPI32 */
+#define HAVE_LIBADVAPI32
 
 /* Define to 1 if you have the `comctl32' library (-lcomctl32). */
-/* #undef HAVE_LIBCOMCTL32 */
+#define HAVE_LIBCOMCTL32
 
 /* Define to 1 if you have the `comdlg32' library (-lcomdlg32). */
-/* #undef HAVE_LIBCOMDLG32 */
+#define HAVE_LIBCOMDLG32
 
 /* Define to 1 if you have the `crypt32' library (-lcrypt32). */
-/* #undef HAVE_LIBCRYPT32 */
+#define HAVE_LIBCRYPT32
 
 /* Define to 1 if you have the `gdi32' library (-lgdi32). */
-/* #undef HAVE_LIBGDI32 */
+#define HAVE_LIBGDI32
 
 /* Define to 1 if you have the `imm32' library (-limm32). */
-/* #undef HAVE_LIBIMM32 */
+#define HAVE_LIBIMM32
 
 /* Define to 1 if you have the `iphlpapi' library (-liphlpapi). */
-/* #undef HAVE_LIBIPHLPAPI */
+#define HAVE_LIBIPHLPAPI
 
 /* Define to 1 if you have the `jpeg ' library (-ljpeg ). */
 /* #undef HAVE_LIBJPEG_ */
 
 /* Define to 1 if you have the `kernel32' library (-lkernel32). */
-/* #undef HAVE_LIBKERNEL32 */
+#define HAVE_LIBKERNEL32
 
 /* Define to 1 if you have the `mingwthrd' library (-lmingwthrd). */
-/* #undef HAVE_LIBMINGWTHRD */
+#define HAVE_LIBMINGWTHRD
 
 /* Define to 1 if you have the `mswsock' library (-lmswsock). */
-/* #undef HAVE_LIBMSWSOCK */
+#define HAVE_LIBMSWSOCK
 
 /* Define to 1 if you have the `ole32' library (-lole32). */
-/* #undef HAVE_LIBOLE32 */
+#define HAVE_LIBOLE32
 
 /* Define to 1 if you have the `oleaut32' library (-loleaut32). */
-/* #undef HAVE_LIBOLEAUT32 */
+#define HAVE_LIBOLEAUT32
 
 /* Define to 1 if you have the `png ' library (-lpng ). */
 /* #undef HAVE_LIBPNG_ */
 
 /* Define to 1 if you have the `rpcrt4' library (-lrpcrt4). */
-/* #undef HAVE_LIBRPCRT4 */
+#define HAVE_LIBRPCRT4
 
 /* Define to 1 if you have the `rt' library (-lrt). */
-/* #undef HAVE_LIBRT */
+#define HAVE_LIBRT
 
 /* Define to 1 if you have the `shell32' library (-lshell32). */
-/* #undef HAVE_LIBSHELL32 */
+#define HAVE_LIBSHELL32
 
 /* Define to 1 if you have the `shlwapi' library (-lshlwapi). */
-/* #undef HAVE_LIBSHLWAPI */
+#define HAVE_LIBSHLWAPI
 
 /* Define to 1 if you have the `ssp' library (-lssp). */
-/* #undef HAVE_LIBSSP */
+#define HAVE_LIBSSP
 
 /* Define to 1 if you have the `user32' library (-luser32). */
-/* #undef HAVE_LIBUSER32 */
+#define HAVE_LIBUSER32
 
 /* Define to 1 if you have the `uuid' library (-luuid). */
-/* #undef HAVE_LIBUUID */
+#define HAVE_LIBUUID
 
 /* Define to 1 if you have the `winmm' library (-lwinmm). */
-/* #undef HAVE_LIBWINMM */
+#define HAVE_LIBWINMM
 
 /* Define to 1 if you have the `winspool' library (-lwinspool). */
-/* #undef HAVE_LIBWINSPOOL */
+#define HAVE_LIBWINSPOOL
 
 /* Define to 1 if you have the `ws2_32' library (-lws2_32). */
-/* #undef HAVE_LIBWS2_32 */
+#define HAVE_LIBWS2_32
 
 /* Define to 1 if you have the `z ' library (-lz ). */
 /* #undef HAVE_LIBZ_ */
@@ -327,13 +327,13 @@
 /* #undef QT_QPA_PLATFORM_COCOA */
 
 /* Define this symbol if the qt platform is windows */
-/* #undef QT_QPA_PLATFORM_WINDOWS */
+#define QT_QPA_PLATFORM_WINDOWS
 
 /* Define this symbol if the qt platform is xcb */
-/* #undef QT_QPA_PLATFORM_XCB */
+#define QT_QPA_PLATFORM_XCB
 
 /* Define this symbol if qt plugins are static */
-/* #undef QT_STATICPLUGIN */
+#define QT_STATICPLUGIN
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
@@ -369,7 +369,7 @@
 #endif
 
 /* Number of bits in a file offset, on hosts where this is settable. */
-/* #undef _FILE_OFFSET_BITS */
+#define _FILE_OFFSET_BITS
 
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */

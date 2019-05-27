@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017 The Innova Core developers
+// Copyright (c) 2014-2019 The Innova Core developers
 
 #include "governance.h"
 
